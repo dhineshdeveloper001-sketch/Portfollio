@@ -58,18 +58,14 @@ export const skills = [
   }
 ] as const;
 
-export const SCHOLARLINK_LIVE_URL = "#";
-export const BILLING_LIVE_URL = "#";
-export const CONTACT_FORM_ENDPOINT: string | null = null;
-
 export interface ProjectItem {
   readonly id: string;
   readonly title: string;
   readonly subtitle: string;
   readonly desc: string;
   readonly stack: readonly string[];
-  readonly github: string | null;
-  readonly liveUrl: string | null;
+  readonly github: string;
+  readonly liveUrl: string;
   readonly liveLabel?: string;
   readonly status: "VERIFIED BUILD" | "CONCEPT · SPEC PENDING";
   readonly previewType: "workflow" | "dashboard" | "calculator" | "cashflow" | "auth" | "game";
@@ -79,79 +75,92 @@ export interface ProjectItem {
 export const projects: readonly ProjectItem[] = [
   {
     id: "01",
-    title: "Hostel Mess Reduction System",
-    subtitle: "Workflow automation · Full stack",
-    desc: "A hostel mess-reduction request management system with student submissions, staff review, approval stages, and status tracking.",
-    stack: ["React", "Tailwind CSS", "Motion", "Java", "Spring Boot", "Hibernate/JPA", "DB Integration"],
-    github: "https://github.com/dhineshdeveloper001-sketch/MessReduction",
-    liveUrl: null,
-    liveLabel: "Live Demo Not Provided",
+    title: "Billing Software",
+    subtitle: "Enterprise SaaS · POS & Invoicing",
+    desc: "A comprehensive retail billing and invoice management system with real-time product tracking, dynamic pricing engines, automated GST calculation modules, and instant receipt generation.",
+    stack: ["Java 21", "Spring Boot 3.2", "MySQL", "React", "GST Engine"],
+    github: "https://github.com/dhineshdeveloper001-sketch/Billing_Software.git",
+    liveUrl: "https://billingsoftware-iota.vercel.app/",
+    liveLabel: "Launch Live Demo",
     status: "VERIFIED BUILD",
-    previewType: "workflow",
-    localImage: "/projects/project-1.png"
+    previewType: "calculator",
+    localImage: "/projects/project-3.png"
   },
   {
     id: "02",
     title: "ScholarLink Hub",
-    subtitle: "Education technology · Collaboration",
-    desc: "A faculty–student collaboration platform for academic communication, attendance tracking, grade management, and reporting.",
-    stack: ["React", "Modern Web UI", "Backend & Database Integration"],
-    github: "https://github.com/dhineshdeveloper001-sketch/Scholarlink-hub",
-    liveUrl: SCHOLARLINK_LIVE_URL,
-    liveLabel: "Open ScholarLink Hub",
+    subtitle: "EdTech Platform · Academic Portal",
+    desc: "A unified academic management platform enabling faculty-student collaboration, attendance monitoring, gradebook administration, and institutional reporting at scale.",
+    stack: ["React", "Spring Boot", "PostgreSQL", "REST API", "RBAC"],
+    github: "https://github.com/dhineshdeveloper001-sketch/Scholarlink-hub.git",
+    liveUrl: "https://scholarlink-mocha.vercel.app/",
+    liveLabel: "Launch Live Demo",
     status: "VERIFIED BUILD",
     previewType: "dashboard",
     localImage: "/projects/project-2.png"
   },
   {
     id: "03",
-    title: "Billing Software",
-    subtitle: "Business software · Billing automation",
-    desc: "A retail billing application for invoice generation, GST calculations, and dynamic pricing.",
-    stack: ["Web Application", "Invoice Engine", "GST Calculation", "Dynamic Pricing"],
-    github: "https://github.com/dhineshdeveloper001-sketch/Billing_Software",
-    liveUrl: BILLING_LIVE_URL,
-    liveLabel: "Open Billing Software",
+    title: "ChikkoShare",
+    subtitle: "Cloud File Sharing · WebRTC & Backblaze B2",
+    desc: "A secure ShareIt-inspired file sharing platform supporting lightning-fast WebRTC transfers on local networks and direct cloud transfers using Backblaze B2 Signed URLs with QR pairing.",
+    stack: ["React", "TypeScript", "Node.js", "Socket.IO", "WebRTC", "Backblaze B2"],
+    github: "https://github.com/dhineshdeveloper001-sketch",
+    liveUrl: "https://chikkoshare.onrender.com",
+    liveLabel: "Launch Live Demo",
+    status: "VERIFIED BUILD",
+    previewType: "auth",
+    localImage: "/projects/project-4.png"
+  },
+  {
+    id: "04",
+    title: "Smart File Organizer",
+    subtitle: "Full Stack SaaS · Storage Analytics",
+    desc: "A full-stack file management application that automatically organizes uploaded files into categories such as Images, Documents, Videos, PDFs, Audio, and Archives with storage analytics.",
+    stack: ["React", "Spring Boot", "MySQL", "JWT", "REST API"],
+    github: "https://github.com/dhineshdeveloper001-sketch",
+    liveUrl: "https://smartfileorganizer-7dmr.onrender.com/",
+    liveLabel: "Launch Live Demo",
+    status: "VERIFIED BUILD",
+    previewType: "cashflow",
+    localImage: "/projects/project-5.png"
+  },
+  {
+    id: "05",
+    title: "Nexus Cart",
+    subtitle: "E-Commerce Engine · Full Stack",
+    desc: "A full-featured e-commerce engine with product catalog management, cart lifecycle handling, payment gateway integration, and real-time inventory tracking.",
+    stack: ["React", "Node.js", "MongoDB", "Stripe", "REST API"],
+    github: "https://github.com/dhineshdeveloper001-sketch",
+    liveUrl: "https://shopping-psi-ten.vercel.app/",
+    liveLabel: "Launch Live Demo",
     status: "VERIFIED BUILD",
     previewType: "calculator",
     localImage: "/projects/project-3.png"
   },
   {
-    id: "04",
-    title: "LedgerFlow Pro",
-    subtitle: "Finance · Backend engineering",
-    desc: "A double-entry ledger application concept for managing financial transactions and presenting account activity through a dashboard.",
-    stack: ["Java", "Spring Boot", "MySQL", "Chart.js"],
-    github: null,
-    liveUrl: null,
-    liveLabel: "Repository & Live Demo Pending Confirmation",
-    status: "CONCEPT · SPEC PENDING",
-    previewType: "cashflow",
-    localImage: "/projects/project-4.png"
-  },
-  {
-    id: "05",
-    title: "Gatekeeper Auth",
-    subtitle: "Authentication · Application security",
-    desc: "An authentication-focused project concept for secure sign-in and user-access workflows.",
-    stack: ["Authentication Workflows", "Application Security", "Access Control"],
-    github: null,
-    liveUrl: null,
-    liveLabel: "Implementation Stack, Repo & Demo Pending Confirmation",
-    status: "CONCEPT · SPEC PENDING",
-    previewType: "auth",
-    localImage: "/projects/project-5.png"
-  },
-  {
     id: "06",
+    title: "SyncTask / Mess Reduction",
+    subtitle: "Workflow Automation · Task Management",
+    desc: "An institutional workflow and distributed task scheduling platform featuring Kanban review stages, meal headcount forecasting to cut waste, and real-time approval pipelines.",
+    stack: ["Java", "Spring Boot", "MySQL", "React", "Workflow Engine"],
+    github: "https://github.com/dhineshdeveloper001-sketch/MessReduction",
+    liveUrl: "https://naanmudhalvan-alpha.vercel.app/",
+    liveLabel: "Launch Live Demo",
+    status: "VERIFIED BUILD",
+    previewType: "workflow",
+    localImage: "/projects/project-1.png"
+  },
+  {
+    id: "07",
     title: "Binary Logic Game",
-    subtitle: "Interactive game · Logical reasoning",
-    desc: "A logic-oriented game concept that demonstrates interactive UI behaviour, pattern recognition, and problem solving.",
-    stack: ["Interactive UI", "Pattern Recognition", "Logical Problem Solving"],
-    github: null,
-    liveUrl: null,
-    liveLabel: "Final Rules, Repo & Demo Pending Confirmation",
-    status: "CONCEPT · SPEC PENDING",
+    subtitle: "Interactive Learning · Boolean Logic",
+    desc: "An interactive visual learning platform for boolean logic gates featuring circuit simulation, real-time truth table validation, and progressive puzzle difficulty.",
+    stack: ["JavaScript", "Canvas API", "CSS3", "HTML5", "AST Engine"],
+    github: "https://github.com/dhineshdeveloper001-sketch",
+    liveUrl: "https://binary-game-ten.vercel.app/",
+    liveLabel: "Launch Live Demo",
+    status: "VERIFIED BUILD",
     previewType: "game",
     localImage: "/projects/project-6.png"
   }
