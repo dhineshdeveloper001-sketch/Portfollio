@@ -45,7 +45,7 @@ A modern, high-performance, interactive digital portfolio built for **Dhineshkum
 | :--- | :--- | :--- | :---: | :---: |
 | **Billing Software** | Enterprise SaaS | Java 21, Spring Boot 3.2, MySQL 8.0, React 18.2 | [Live Demo](https://billingsoftware-iota.vercel.app/) | [GitHub](https://github.com/dhineshdeveloper001-sketch) |
 | **Nexus Cart** | E-Commerce | React 18.2, Node.js 20, MongoDB 7.0, Stripe 14.0 | [Live Demo](https://shopping-psi-ten.vercel.app/) | [GitHub](https://github.com/dhineshdeveloper001-sketch) |
-| **Smart File Organizer** | Full Stack | React 18.2, Spring Boot 3.2, MySQL 8.0, JWT 0.12 | [Live Demo](https://smartfileorganizer-frontend.vercel.app/) | [GitHub](https://github.com/dhineshdeveloper001-sketch) |
+| **Smart File Organizer** | Full Stack | React 18.2, Spring Boot 3.2, MySQL 8.0, JWT 0.12 | [Live Demo](https://smart-file-organizer-zeta.vercel.app/) | [GitHub](https://github.com/dhineshdeveloper001-sketch) |
 | **Binary Logic Game** | Interactive Learning | JavaScript ES6, Canvas API v2, CSS3, HTML5 | [Live Demo](https://binary-game-ten.vercel.app/) | [GitHub](https://github.com/dhineshdeveloper001-sketch) |
 
 ---

@@ -119,7 +119,7 @@ export const projects: readonly ProjectItem[] = [
     desc: "A full-stack file management application that automatically organizes uploaded files into categories such as Images, Documents, Videos, PDFs, Audio, and Archives with storage analytics.",
     stack: ["React", "Spring Boot", "MySQL", "JWT", "REST API"],
     github: "https://github.com/dhineshdeveloper001-sketch",
-    liveUrl: "https://smartfileorganizer-frontend.vercel.app/",
+    liveUrl: "https://smart-file-organizer-zeta.vercel.app/",
     liveLabel: "Launch Live Demo",
     status: "VERIFIED BUILD",
     previewType: "cashflow",
